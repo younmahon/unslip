@@ -3,10 +3,10 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "build": "node node_modules/vite/bin/vite.js build",
+  "dev":   "vite",
+  "preview": "vite preview"
+},
   "dependencies": {
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.326.0",
