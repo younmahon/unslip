@@ -19,7 +19,7 @@ async function queryGPT(noun) {
   if (!OPENAI_API_KEY) {
     throw new Error("OPENAI_API_KEY missing – set VITE_OPENAI_API_KEY");
   }
-  const prompt = `You are an expert on Standard German grammar. Respond ONLY with raw JSON (no markdown fences) like {\"article\":\"der\",\"gender\":\"masculine\"}. What is the definite article and gender of \"${noun}\"?`;
+  const prompt = `You are an expert on Standard German grammar. If the user enters a mis-spelled word, make the best guess about that word and answer according to that assumption. Respond ONLY with raw JSON (no markdown fences) like {\"article\":\"der\",\"gender\":\"masculine\"}. What is the definite article and gender of \"${noun}\"?`;
 
   const res = await fetch(OPENAI_ENDPOINT, {
     method: "POST",
