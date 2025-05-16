@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 const MODEL = "gpt-4o"; // or "gpt-4o-mini"
 const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
-console.log("DEBUG: VITE_OPENAI_API_KEY in build:", OPENAI_API_KEY);
+
 const BG_URL =
   "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2200&q=80"; // coffee cup background
 
